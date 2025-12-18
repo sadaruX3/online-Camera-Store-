@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signin"
+    android:background="@drawable/mt3">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="921dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/TVcameralk9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/TVcameralk"
+            android:textAlignment="center"
+            android:textColor="@color/IshotLK"
+            android:textSize="45sp"
+            android:translationY="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.133" />
+
+        <ImageView
+            android:id="@+id/emptyprofile2"
+            android:layout_width="171dp"
+            android:layout_height="161dp"
+            android:translationX="120dp"
+            android:translationY="80dp"
+            app:srcCompat="@drawable/profile2" />
+
+        <TextView
+            android:id="@+id/tvemailin"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textSize="20sp"
+            android:translationX="30sp"
+            android:translationY="100dp" />
+
+        <EditText
+            android:id="@+id/edtemailin"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:translationX="30sp"
+            android:translationY="100dp"
+            tools:ignore="TextFields" />
+
+        <TextView
+            android:id="@+id/tvpasin"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="20sp"
+            android:translationX="30sp"
+            android:translationY="100dp" />
+
+        <EditText
+            android:id="@+id/edtpasswordin"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:translationX="30sp"
+            android:translationY="100dp"
+            tools:ignore="TextFields" />
+
+        <Button
+            android:id="@+id/btnsignin"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/orange"
+            android:text="@string/btnsignin"
+            android:translationY="150dp" />
+
+        <TextView
+
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:text="@string/tvsignin"
+            android:textSize="20sp"
+            android:translationX="30sp"
+            android:translationY="180dp" />
+
+        <TextView
+            android:id="@+id/tvsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:translationX="230dp"
+            android:translationY="152dp" />
+
+
+        <FrameLayout
+            android:id="@+id/fl_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_above="@id/bottom_navigation2"
+            android:layout_weight="1"
+            tools:ignore="ObsoleteLayoutParam" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

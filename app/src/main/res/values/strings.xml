@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">IshotLK</string>
+    <string name="TVcameralk">IshotLK</string>
+    <string name="next">Next</string>
+    <string name="your_dream_store">Your Dream Store</string>
+    <string name="welcome_to">Welcome TO</string>
+    <string name="todo">TODO</string>
+    <string name="home">HOME</string>
+    <string name="get_started">Get Started</string>
+    <string name="TVtopdeals">Top Deals</string>
+    <string name="btn_camera">Camera</string>
+    <string name="btn_lens">Lens</string>
+    <string name="btn_light">Light</string>
+    <string name="btn_drone">Drone</string>
+
+    <string name="ptname">  W L P S Sadaru</string>
+    <string name="name">Name</string>
+    <string name="ptmobile"> 077 0351127</string>
+    <string name="mobile">Mobile</string>
+    <string name="ptemail">sadaru@gmail.com</string>
+    <string name="email">Email</string>
+    <string name="ptaddress">Matara</string>
+    <string name="address">Address</string>
+    <string name="ptpassword">*********</string>
+    <string name="password">Password</string>
+    <string name="btnlogout">Log out</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="tvcamera">Camera</string>
+    <string name="tvlens">Lens</string>
+    <string name="tvdrone">Drone</string>
+    <string name="tvlight">Light</string>
+
+
+    <string name="repassword">Confirm Password</string>
+    <string name="already">Already Have Account ?</string>
+    <string name="signin">Sign in</string>
+    <string name="btnsignin">Sign in</string>
+    <string name="tvsignin">Don\'t Have Account ?</string>
+    <string name="signup">Sign up</string>
+    <string name="tvsignup">Sign Up</string>
+    <string name="btn_signup">Sign Up</string>
+    <string name="btnsignup">Sign Up</string>
+
+
+    <string name="buycam1">Canon Eos R100
+                           Rs 512500.00 </string>
+    <string name="tvbuycam2">Sony Alpha III
+                           Rs 399500.00 </string>
+    <string name="addtocart1">Add To Cart</string>
+
+    <string name="description">24.1MP APS-C CMOS sensor
+                               ISO 100-12,800; ISO 25,600 (extended)
+                               6.5 fps shooting (3.5fps with C-AF)
+                               2.36m-dot, 0.59x OLED EVF
+                               3in, 1.04m-dot fixed LCD
+                               4K video recording at 25fps (cropped)
+                                Creative Filters and Creative Assist
+                                Dual Pixel CMOS AF
+                                DIGIC 8 processor
+                                Full HD movie at up to 60 fps</string>
+
+
+    <string name="btnbuy">Buy</string>
+    <string name="btnrent">Rent</string>
+
+    //cart
+    <string name="mycart">My Cart</string>
+    <string name="cartcamname">Canon Eos R100</string>
+    <string name="cartcamprice">Rs 512500.00</string>
+    <string name="cartlensname">Canon 35mm - 70mm</string>
+    <string name="cartlensprice">Rs 135000.00</string>
+    <string name="tvqty">1</string>
+    <string name="tvtotal">Total</string>
+    <string name="totalprice">Rs 647500.00</string>
+    <string name="btncheckout">Check Out</string>
+
+
+    <string name="pamentmethod"> Payment Method</string>
+    <string name="cod">Cash On Delivery</string>
+    <string name="cp">Card Payment</string>
+    <string name="ptp">Proceed To Pay</string>
+
+
+    <string name="cardpayment">Card Payment</string>
+    <string name="cardtype">Card Type</string>
+    <string name="tvcardnumber">Card Number</string>
+    <string name="edtcardnumber">XXXX-XXXX-XXXX-XXXX</string>
+    <string name="tvmmyy">MM / YY</string>
+    <string name="edtmmyy">MM / YY</string>
+    <string name="tvcvv">CVV</string>
+    <string name="edtcvv">123</string>
+    <string name="btnpay">Pay</string>
+
+
+    <string name="payment">Payment</string>
+    <string name="order">Order</string>
+    <string name="orderdes">The order will receive within 3-7 days       Thank You !</string>
+    <string name="successfull"> Successfull !</string>
+    <string name="btndone">Done</string>
+
+
+</resources>

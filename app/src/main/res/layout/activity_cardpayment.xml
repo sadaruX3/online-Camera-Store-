@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cardpayment"
+    android:background="@drawable/mt6">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="921dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:translationX="-20dp"
+            android:translationY="65dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/TVcameralk10"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.091"
+            app:srcCompat="@drawable/back" />
+
+        <TextView
+            android:id="@+id/cardpayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/cardpayment"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            android:translationY="0dp" />
+
+        <ImageView
+            android:id="@+id/cardpaymentpng"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:translationY="20dp"
+            app:srcCompat="@drawable/cardpayment" />
+
+
+        <ImageView
+            android:id="@+id/cardrec"
+            android:layout_width="370dp"
+            android:layout_height="450dp"
+            android:layout_gravity="center"
+            android:outlineAmbientShadowColor="@color/gray1"
+            android:translationY="30dp"
+            app:srcCompat="@drawable/payment_rectangle" />
+
+
+        <TextView
+            android:id="@+id/tvsuccess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/carlito"
+            android:text="@string/cardtype"
+            android:textSize="24sp"
+            android:translationX="30dp"
+            android:translationY="-390dp" />
+
+        <RadioButton
+            android:id="@+id/visabtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarSize="7dp"
+            android:textSize="24sp"
+            android:translationX="50dp"
+            android:translationY="-370dp" />
+
+        <RadioButton
+            android:id="@+id/masterbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationX="250dp"
+            android:translationY="-420dp" />
+
+        <ImageView
+            android:id="@+id/visa"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:translationX="280dp"
+            android:translationY="-490dp"
+            app:srcCompat="@drawable/visa" />
+
+        <ImageView
+            android:id="@+id/master"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:translationX="80dp"
+            android:translationY="-590dp"
+            app:srcCompat="@drawable/master" />
+
+        <TextView
+            android:id="@+id/tvcardnumber"
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:fontFamily="@font/carlito"
+            android:text="@string/tvcardnumber"
+            android:textSize="24sp"
+            android:translationX="30dp"
+            android:translationY="-590dp" />
+
+        <EditText
+            android:id="@+id/edtcardnumber"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:hint="@string/edtcardnumber"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:translationX="50dp"
+            android:translationY="-580dp"
+            android:backgroundTint="@color/gray1"/>
+
+        <TextView
+            android:id="@+id/tvmmyy"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:fontFamily="@font/carlito"
+            android:text="@string/tvmmyy"
+            android:textSize="20sp"
+            android:translationX="60dp"
+            android:translationY="-550dp" />
+
+        <TextView
+            android:id="@+id/tvcvv"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:fontFamily="@font/carlito"
+            android:text="@string/tvcvv"
+            android:textSize="22sp"
+            android:translationX="270dp"
+            android:translationY="-595dp" />
+
+        <EditText
+            android:id="@+id/edtmmyy"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/gray1"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:hint="@string/edtmmyy"
+            android:inputType="text"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:translationX="50dp"
+            android:translationY="-600dp" />
+
+        <EditText
+            android:id="@+id/edtcvv"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/gray1"
+            android:ems="10"
+            android:hint="@string/edtcvv"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:translationX="250dp"
+            android:translationY="-645dp" />
+
+        <TextView
+            android:id="@+id/tvtotal"
+            android:layout_width="151dp"
+            android:layout_height="42dp"
+            android:fontFamily="@font/carlito"
+            android:text="@string/tvtotal"
+            android:textSize="28sp"
+            android:translationX="60dp"
+            android:translationY="-610dp" />
+
+        <TextView
+            android:id="@+id/totalprice"
+            android:layout_width="214dp"
+            android:layout_height="42dp"
+            android:fontFamily="@font/carlito"
+            android:text="@string/totalprice"
+            android:textSize="28sp"
+            android:translationX="230dp"
+            android:translationY="-650dp" />
+
+        <Button
+            android:id="@+id/btnpay"
+            android:layout_width="250sp"
+            android:layout_height="60sp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/orange2"
+            android:text="@string/btnpay"
+            android:translationY="-560sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

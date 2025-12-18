@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FF6611</color>
+    <color name="orange2">#ffbe23</color>
+    <color name="gray1">#E5E5EA</color>
+    <color name="gray2">#B9B9B9</color>
+    <color name="blue">#0000FF</color>
+
+    <color name="IshotLK">#A2845E</color>
+    <color name="gradient_start">#6C63FF</color>
+    <color name="gradient_end">#3AB8FF</color>
+
+    <color name="progress_fg">#FFFFFF</color>
+    <color name="progress_track">#2A2E42</color>
+    <color name="progress_track_translucent">#40FFFFFF</color>
+
+    <color name="chip_bg">#F1F3F5</color>
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup"
+    android:background="@drawable/mt3">
+
+    <!-- Title -->
+
+    <!-- Scrollable content -->
+
+    <TextView
+        android:id="@+id/TVcameralk9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/playfair_display"
+        android:paddingTop="16dp"
+        android:text="@string/TVcameralk"
+        android:textAlignment="center"
+        android:textColor="@color/IshotLK"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/TVcameralk9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="24dp">
+
+            <!-- Name -->
+
+            <ImageView
+                android:id="@+id/emptyprofile2"
+                android:layout_width="171dp"
+                android:layout_height="161dp"
+                android:translationX="120dp"
+                android:translationY="30dp"
+                app:srcCompat="@drawable/profile2" />
+
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textSize="16sp"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/edtname2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="textPersonName"
+                android:hint="@string/name"
+                android:paddingHorizontal="12dp"/>
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/tvemailin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"/>
+
+            <EditText
+                android:id="@+id/edtemailin"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email"
+                android:autofillHints="emailAddress"
+                android:paddingHorizontal="12dp"/>
+
+            <!-- Mobile -->
+            <TextView
+                android:id="@+id/tvmobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"/>
+
+            <EditText
+                android:id="@+id/edtmobile"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="phone"
+                android:hint="@string/mobile"
+                android:paddingHorizontal="12dp"/>
+
+            <!-- Address -->
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"/>
+
+            <EditText
+                android:id="@+id/editTextText10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:inputType="textPostalAddress"
+                android:hint="@string/address"
+                android:paddingHorizontal="12dp"/>
+
+            <!-- Password -->
+            <TextView
+                android:id="@+id/tvpasin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"/>
+
+            <EditText
+                android:id="@+id/edtpasswordin"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="textPassword"
+                android:hint="@string/password"
+                android:paddingHorizontal="12dp"/>
+
+            <!-- Re-enter Password -->
+            <TextView
+                android:id="@+id/repass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/repassword"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"/>
+
+            <EditText
+                android:id="@+id/reenterpassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="textPassword"
+                android:hint="@string/repassword"
+                android:paddingHorizontal="12dp"/>
+
+            <!-- Sign up button -->
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/orange"
+                android:text="@string/btnsignup"/>
+
+            <!-- Sign in row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="12dp">
+
+                <TextView
+                    android:id="@+id/already"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/already"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signin"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp"
+                    android:paddingStart="6dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

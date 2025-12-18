@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".buypage"
+    android:background="@drawable/n1">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="410dp"
+        android:layout_height="921dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/roundedcorner"
+            android:translationY="705dp"
+            app:itemBackground="@drawable/orange2"
+            app:itemIconTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/categoryScrollView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/categoryScrollView"
+            app:layout_constraintVertical_bias="0.5"
+            app:menu="@menu/navbar"
+            android:clipToOutline="true"
+            android:layout_marginBottom="0dp"
+            android:paddingBottom="0dp" />
+
+        <ImageView
+            android:id="@+id/btnback"
+            android:layout_width="55dp"
+            android:layout_height="34dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/TVcameralk10"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.091"
+            app:srcCompat="@drawable/menu" />
+
+        <TextView
+            android:id="@+id/TVcameralk10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/playfair_display"
+            android:text="@string/TVcameralk"
+            android:textSize="45sp"
+            android:translationY="-20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.127" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="59dp"
+            android:layout_height="39dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toEndOf="@+id/TVcameralk10"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.091"
+            app:srcCompat="@drawable/cart" />
+
+        <SearchView
+            android:id="@+id/searchbar"
+            android:layout_width="358dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="668dp"
+            android:background="@drawable/search_bar"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search Product"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TVcameralk10"
+            app:layout_constraintVertical_bias="0.035"
+            tools:visibility="visible" />
+
+        <HorizontalScrollView
+            android:id="@+id/categoryScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:padding="10dp"
+            android:scrollbars="none"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/categoryLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="300sp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/black"
+                    android:padding="10dp"
+                    android:text="@string/btn_camera"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnbuy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="#ececec"
+                    android:padding="10dp"
+                    android:text="@string/btn_lens"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnrent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="#ececec"
+                    android:padding="10dp"
+                    android:text="@string/btn_light"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_drone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="#ececec"
+                    android:padding="10dp"
+                    android:text="@string/btn_drone"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ScrollView
+            android:layout_width="414dp"
+            android:layout_height="498dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/categoryScrollView"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/rec1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:translationX="30dp"
+                    android:translationY="30dp"
+                    app:srcCompat="@drawable/rectangle" />
+
+                <ImageView
+                    android:id="@+id/buycam2"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:translationX="20dp"
+                    android:translationY="-110dp"
+                    app:srcCompat="@drawable/cam1" />
+
+                <TextView
+                    android:id="@+id/tvbuycam1"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/buycam1"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:translationX="35dp"
+                    android:translationY="-95dp" />
+
+                <Button
+                    android:id="@+id/addtocartbtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/orange"
+                    android:text="@string/addtocart1"
+                    android:translationX="30dp"
+                    android:translationY="-80dp" />
+
+                <ImageView
+                    android:id="@+id/rec2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:translationX="250dp"
+                    android:translationY="-325dp"
+                    app:srcCompat="@drawable/rectangle" />
+
+                <ImageView
+                    android:id="@+id/buycam3"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:translationX="255dp"
+                    android:translationY="-440dp"
+                    app:srcCompat="@drawable/sony" />
+
+                <TextView
+                    android:id="@+id/tvbuycam2"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvbuycam2"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:translationX="265dp"
+                    android:translationY="-430dp" />
+
+                <Button
+                    android:id="@+id/addtocartbtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/orange"
+                    android:text="@string/addtocart1"
+                    android:translationX="255dp"
+                    android:translationY="-420dp" />
+
+                <ImageView
+                    android:id="@+id/rec3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:translationX="30dp"
+                    android:translationY="-340dp"
+                    app:srcCompat="@drawable/rectangle" />
+
+                <ImageView
+                    android:id="@+id/buycam4"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:translationX="40dp"
+                    android:translationY="-460dp"
+                    app:srcCompat="@drawable/nikoncoolplix" />
+
+                <TextView
+                    android:id="@+id/tvbuycam3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvbuycam2"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:translationX="35dp"
+                    android:translationY="-430dp" />
+
+                <Button
+                    android:id="@+id/addtocartbtn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/orange"
+                    android:text="@string/addtocart1"
+                    android:translationX="30dp"
+                    android:translationY="-420dp" />
+
+                <ImageView
+                    android:id="@+id/rec4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:translationX="250dp"
+                    android:translationY="-665dp"
+                    app:srcCompat="@drawable/rectangle" />
+
+                <ImageView
+                    android:id="@+id/buycam5"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:translationX="255dp"
+                    android:translationY="-780dp"
+                    app:srcCompat="@drawable/sony" />
+
+                <TextView
+                    android:id="@+id/tvbuycam4"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tvbuycam2"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:translationX="265dp"
+                    android:translationY="-770dp" />
+
+                <Button
+                    android:id="@+id/addtocartbtn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/orange"
+                    android:text="@string/addtocart1"
+                    android:translationX="255dp"
+                    android:translationY="-760dp" />
+            </LinearLayout>
+
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
